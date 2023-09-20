@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Open+Sans&family=Roboto:wght@700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    h1,
+    h2
+    {
+    @apply font-bold font-hansblack
+}
+
+h3 {
+    @apply font-roboto font-bold
+}
+
+body {
+    @apply font-opensans
+}
+
+h3 {
+    @apply text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl pb-5 tracking-wider leading-normal font-normal
+}
+
+p {
+    @apply text-sm md:text-base lg:text-lg xl:text-xl
+}
+}
+
+
+
+@layer components {
+    .hover-link {
+        @apply hover:underline font-semibold
+    }
+
+    .btn-small {
+        @apply bg-white py-1.5 px-4 text-black rounded-3xl font-medium hover:text-primary hover:shadow-lg hover:shadow-black/30 transition duration-200
+    }
+
+    .btn-large {
+        @apply py-4 px-8 bg-white text-black rounded-full text-base lg:text-lg xl:text-xl hover:shadow-lg hover:shadow-black/20 transition duration-200
+    }
+
+    .white-btn {
+        @apply bg-white text-black hover:text-primary
+    }
+
+    .black-btn {
+        @apply bg-black text-white
+    }
+
+    .btn-blue {
+        @apply bg-primary text-white w-full sm:w-80
+    }
+
+    .footer-link {
+        @apply hover:underline text-white
+    }
+}

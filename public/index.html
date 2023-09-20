@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- small nav -->
+    <div
+      id="side-bar"
+      class="top-0 right-0 fixed bg-white w-72 z-50 h-full transition-all duration-200"
+    >
+      <div class="p-5">
+        <div class="flex items-center justify-between text-black">
+          <img src="./images/assets/nav logo.svg" alt="" />
+          <i id="close-btn" class="ri-close-line text-3xl font-bold"></i>
+        </div>
+
+        <ul class="text-black pt-10 flex flex-col gap-y-5">
+          <li class="bg-[#f6f6f6] text-primary font-semibold py-2 px-5">
+            <a href="">Home</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Download</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Nitro</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Discover</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Safety</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Support</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Blog</a>
+          </li>
+          <li
+            class="py-2 px-5 font-medium hover:bg-[#f6f6f6] hover:text-primary"
+          >
+            <a href="">Careers</a>
+          </li>
+        </ul>
+        <button
+          class="flex items-center gap-x-3 px-4 py-2 rounded-full bg-primary text-white text-sm bottom-5 absolute left-10"
+        >
+          <i class="ri-download-2-line"></i><span>Download for Windows</span>
+        </button>
+      </div>
+    </div>
+
+    <header class="bg-primary">
+      <nav class="text-white flex items-center justify-between container py-6">
+        <img
+          class="brightness-0 invert"
+          src="./images/assets/nav logo.svg"
+          alt=""
+        />
+        <ul class="hidden lg:flex items-center gap-x-8 text-lg">
+          <li>
+            <a class="hover-link" href="#">Download</a>
+          </li>
+          <li><a class="hover-link" href="#">Nitro</a></li>
+          <li>
+            <a class="hover-link" href="#">Discover</a>
+          </li>
+          <li><a class="hover-link" href="#">Safety</a></li>
+          <li><a class="hover-link" href="#">Support</a></li>
+          <li><a class="hover-link" href="#">Blog</a></li>
+          <li><a class="hover-link" href="#">Careers</a></li>
+        </ul>
+        <div class="flex items-center gap-4">
+          <button class="btn-small">Login</button>
+          <ion-icon
+            id="open-btn"
+            name="menu-outline"
+            class="text-white w-12 h-12 block lg:hidden"
+          ></ion-icon>
+          
+        </div>
+      </nav>
+    </header>
+
+    <!-- landing section -->
+    <section class="relative bg-primary bg-landingimg overflow-x-hidden">
+      <img
+        src="./images/assets/landing 2.svg"
+        class="absolute bottom-0 right-30 xl:-left-60 w-[75%] xl:w-[40%] block md:hidden xl:block"
+        alt=""
+      />
+      <img
+        src="./images/assets/landing 3.svg"
+        class="absolute bottom-0 hidden xl:w-[40%] md:block md:right-0 md:-[95%] xl:-right-56"
+        alt=""
+      />
+      <div
+        class="container text-white flex flex-col gap-8 items-start xl:items-center xl:justify-center h-[84vh] xl:h-[78vh] pt-20 xl:pt-0"
+      >
+        <h1 class="text-3xl lg:text-4xl xl:text-6xl tracking-widest">
+          IMAGINE A PLACE...
+        </h1>
+        <p class="text-sm lg:text-lg xl:text-xl tracking-wider leading-normal">
+          ...where you can belong to a school club, a gaming group, or a
+          worldwide art community.<br />
+          Where just you and a handful of friends can spend time together. A
+          place that makes it easy<br />to talk every day and hang out more
+          often.
+        </p>
+        <div class="flex flex-col xl:flex-row items-center gap-5">
+          <button class="btn-large white-btn flex items-center gap-3">
+            <i class="ri-download-2-line h-7"></i>Download for Windows
+          </button>
+          <button class="btn-large black-btn">
+            Open Discord in your browser
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 lg:py-28">
+      <div
+        class="container flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-8"
+      >
+        <img
+          src="./images/assets/asset 3.svg"
+          alt=""
+          class="md:w-6/12 lg:w-7/12"
+        />
+
+        <div class="text-black md:w-5/12 lg:w-4/12">
+          <h3>Create an invite-only place where you belong</h3>
+          <p>
+            Discord servers are organized into topic-based channels where you
+            can collaborate, share, and just talk about your day without
+            clogging up a group chat.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f6f6f6] py-20 lg:py-28">
+      <div
+        class="container flex flex-col md:flex-row-reverse items-center justify-center gap-6 lg:gap-8"
+      >
+        <img
+          src="./images/assets/asset 4.svg"
+          alt=""
+          class="md:w-6/12 lg:w-7/12"
+        />
+
+        <div class="text-black md:w-5/12 lg:w-4/12">
+          <h3>Where hanging out is easy</h3>
+          <p>
+            Grab a seat in a voice channel when you’re free. Friends in your
+            server can see you’re around and instantly pop in to talk without
+            having to call.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white py-20 lg:py-28">
+      <div
+        class="container flex flex-col md:flex-row items-center justify-center gap-6 lg:gap-8"
+      >
+        <img
+          src="./images/assets/asset 5.svg"
+          alt=""
+          class="md:w-6/12 lg:w-7/12"
+        />
+
+        <div class="text-black md:w-5/12 lg:w-4/12">
+          <h3>From few to a fandom</h3>
+          <p>
+            Get any community running with moderation tools and custom member
+            access. Give members special powers, set up private channels, and
+            more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-[#f6f6f6] py-20 lg:py-28">
+      <div class="container">
+        <div class="text-center text-black md:px-16 lg:px-32">
+          <h2
+            class="text-2xl md:text-3xl lg:text-4xl xl:text-5xl uppercase pb-5"
+          >
+            RELIABLE TECH FOR STAYING CLOSE
+          </h2>
+          <p>
+            Low-latency voice and video feels like you’re in the same room. Wave
+            hello over video, watch friends stream their games, or gather up and
+            have a drawing session with screen share.
+          </p>
+        </div>
+        <img src="./images/assets/asset 6.svg" alt="" class="w-full" />
+      </div>
+    </section>
+
+    <div class="text-black text-center bg-starimg bg-no-repeat bg-center">
+      <h4 class="text-xl md:text-3xl font-bold font-roboto pt-10 md:pt-24">
+        Ready to start your journey?
+      </h4>
+      <button
+        class="btn-large btn-blue mt-8 mb-32 flex items-center justify-center gap-x-2 mx-auto"
+      >
+        <i class="ri-download-2-line"></i>
+        <span>Download for Windows</span>
+      </button>
+    </div>
+
+    <footer class="bg-black py-20">
+      <div
+        class="container flex gap-20 flex-col md:flex-row justify-between items-start"
+      >
+        <div class="flex items-center gap-x-5">
+          <img
+            class="w-7 h-7 brightness-0 invert cursor-pointer opacity-80"
+            src="./images/assets/asset 13.svg"
+            alt=""
+          />
+          <img
+            class="w-7 h-7 brightness-0 invert cursor-pointer opacity-80"
+            src="./images/assets/asset 14.svg"
+            alt=""
+          />
+          <img
+            class="w-7 h-7 brightness-0 invert cursor-pointer opacity-80"
+            src="./images/assets/asset 15.svg"
+            alt=""
+          />
+          <img
+            class="w-7 h-7 brightness-0 invert cursor-pointer opacity-80"
+            src="./images/assets/asset 16.svg"
+            alt=""
+          />
+          <img
+            class="w-7 h-7 brightness-0 invert cursor-pointer opacity-80"
+            src="./images/assets/asset 17.svg"
+            alt=""
+          />
+        </div>
+        <div class="flex-1 grid grid-cols-2 lg:grid-cols-4 gap-10">
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Products</p>
+            <a href="#" class="footer-link">Download</a>
+            <a href="#" class="footer-link">nitro</a>
+            <a href="#" class="footer-link">Status</a>
+          </ul>
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Company</p>
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">jobs</a>
+            <a href="#" class="footer-link">branding</a>
+            <a href="#" class="footer-link">newsroom</a>
+          </ul>
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Resources</p>
+            <a href="#" class="footer-link">College</a>
+            <a href="#" class="footer-link">Support</a>
+            <a href="#" class="footer-link">Safety</a>
+            <a href="#" class="footer-link">Blog</a>
+            <a href="#" class="footer-link">Developers</a>
+            <a href="#" class="footer-link">StreamKit</a>
+          </ul>
+          <ul class="flex flex-col gap-y-2">
+            <p class="text-sm text-primary">Policies</p>
+            <a href="#" class="footer-link">Terms</a>
+            <a href="#" class="footer-link">Privacy</a>
+            <a href="#" class="footer-link">Cookie Settings</a>
+            <a href="#" class="footer-link">Guidelines</a>
+            <a href="#" class="footer-link">Acknowledgements</a>
+            <a href="#" class="footer-link">Licenses</a>
+            <a href="#" class="footer-link">Moderation</a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="container">
+        <div
+          class="pt-10 flex flex-wrap gap-y-3 items-center justify-between border-t-2 border-primary mt-10"
+        >
+          <img
+            class="brightness-0 invert"
+            src="./images/assets/nav logo.svg"
+            alt=""
+          />
+          <div class="text-sm text-gray-400 flex gap-x-1 items-center"></div>
+          <button
+            class="py-2 px-3 rounded-full bg-primary text-white hover:shadow-lg shadow-primary"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <scripts
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></scripts>
+    <script src="./app.js"></script>
+  </body>
+</html>
